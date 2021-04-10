@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Cloud Computing Gaming</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function initMap() {
+        const kharkiv = {
+          lat: 50.014009822999206,
+          lng: 36.22448274404761,
+        };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: kharkiv,
+        });
+        const marker = new google.maps.Marker({
+          position: kharkiv,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="content">
+      <table class="table header">
+        <tr>
+          <td>
+            <img src="assets/unnamed.png" class="logo" />
+          </td>
+          <td><a href="index.html">Alexa Cloud Gaming</a></td>
+          <td><a href="subscribe.html">Підписатись</a></td>
+          <td><a href="office.html" class="a-active">Офіс</a></td>
+          <td><a href="goods.html">Вимоги до обладнання</a></td>
+          <td class="w50-cell"></td>
+        </tr>
+      </table>
+
+      <table class="table wide">
+        <tr>
+          <td class="w25-cell"></td>
+          <td class="w60-cell">
+            <h2>
+              Адрес: проспект Науки, 9A, Харків, Харківська область, 61166
+            </h2>
+          </td>
+          <td class="w25-cell"></td>
+        </tr>
+        <tr class="h40-cell"></tr>
+        <tr>
+          <td class="w25-cell"></td>
+          <td class="w60-cell"><div id="map"></div></td>
+          <td class="w25-cell"></td>
+        </tr>
+      </table>
+    </div>
+
+    <footer class="footer">
+      <table class="table footer">
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td class="def-cell">© Олексій Романенко</td>
+            <td class="def-cell">Група 6.03.075.010.20.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </footer>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjD9qcd0Kgj6B8wSovdbVL3qRg2f9yAW8&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
